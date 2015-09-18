@@ -10,6 +10,13 @@ describe('Order', function() {
     expect(testOrder.customerName).to.equal('Luigi');
     expect(testOrder.pizza).to.eql([]);
   });
+
+  it('returns an order with a customer, pizza and price for a pizza', function() {
+    var testOrder = new Order('Luigi');
+    expect(testOrder.customerName).to.equal('Luigi');
+    expect(testOrder.pizza).to.eql([]);
+    expect(testOrder.pizzaPrice).to.equal('12.00');
+  });
 });
 
 describe('Pizza', function() {
