@@ -1,5 +1,6 @@
 function Order(customerName) {
   this.customerName = customerName;
+  this.pizza = [];
 }
 
 function Pizza(topping1) {

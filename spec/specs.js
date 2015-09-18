@@ -1,7 +1,14 @@
 describe('Order', function() {
+
   it('returns an order with a customer', function() {
     var testOrder = new Order('Luigi');
     expect(testOrder.customerName).to.equal('Luigi');
+  });
+
+  it('returns an order with a customer and empty pizza array', function() {
+    var testOrder = new Order('Luigi');
+    expect(testOrder.customerName).to.equal('Luigi');
+    expect(testOrder.pizza).to.eql([]);
   });
 });
 
