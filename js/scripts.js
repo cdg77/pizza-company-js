@@ -1,7 +1,7 @@
 function Order(customerName) {
   this.customerName = customerName;
   this.pizza = [];
-  this.price = '';
+  this.price = 0;
 }
 
 function Pizza(topping1) {
@@ -9,5 +9,5 @@ function Pizza(topping1) {
 }
 
 Order.prototype.pricePizza = function() {
-  this.price = '12.00';
+  this.price = 12.00;
 }

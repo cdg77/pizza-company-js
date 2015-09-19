@@ -15,13 +15,13 @@ describe('Order', function() {
     var testOrder = new Order('Luigi');
     expect(testOrder.customerName).to.equal('Luigi');
     expect(testOrder.pizza).to.eql([]);
-    expect(testOrder.price).to.equal('');
+    expect(testOrder.price).to.equal(0);
   });
 
   it('returns a base price for a single pizza', function() {
     var testOrder = new Order('Luigi');
     testOrder.pricePizza();
-    expect(testOrder.price).to.equal('12.00');
+    expect(testOrder.price).to.equal(12.00);
   });
 
 });
