@@ -24,6 +24,13 @@ describe('Order', function() {
     expect(testOrder.price).to.equal(12.00);
   });
 
+  it('returns a pizza with 2 toppings', function() {
+    var testOrder = new Order('Luigi and Mario');
+    testOrder.addToppings();
+    expect(testOrder.pizza).to.eql(['carnitas, grilled onions']);
+  });
+
+
 });
 
 describe('Pizza', function() {
@@ -31,4 +38,6 @@ describe('Pizza', function() {
     var testPizza = new Pizza('carnitas');
     expect(testPizza.topping1).to.equal('carnitas');
   });
+
+
 });
