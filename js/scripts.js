@@ -12,6 +12,6 @@ Order.prototype.pricePizza = function() {
   this.price = 12.00;
 }
 
-Order.prototype.addToppings = function() {
-  this.pizza.push('carnitas, grilled onions')
+Order.prototype.addToppings = function(topping) {
+  this.pizza.push(topping);
 }

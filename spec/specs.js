@@ -26,9 +26,11 @@ describe('Order', function() {
 
   it('returns a pizza with 2 toppings', function() {
     var testOrder = new Order('Luigi and Mario');
-    testOrder.addToppings();
-    expect(testOrder.pizza).to.eql(['carnitas, grilled onions']);
+    testOrder.addToppings('pulled pork');
+    testOrder.addToppings('grilled onions');
+    expect(testOrder.pizza).to.eql(['pulled pork', 'grilled onions']);
   });
+
 
 
 });
