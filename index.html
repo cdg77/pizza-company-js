@@ -2,19 +2,72 @@
 <html>
   <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/darkly/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza Company</title>
   </head>
-  <body>
+  <body class="grfcs">
     <div class="container">
       <div class="jumbotron">
-        <h1>Garfield and Odie's Pizza</h1>
+        <h1 align='center'>Garfield and Odie's Pizza</h1>
+        <div class="well col-md-pull" ><img src="images/garfield-odie.jpg" alt="" /></div>
+        <div class = "row">
+          <div class = "container">
+            <form  id = "pizza-size" class="form-group">
+              <div class = "col-md-4">
+                <select class="form-control" id="pizza-size">
+                  <option value="personal">Personal | $10</option>
+                  <option value="small">Small | $12</option>
+                  <option value="medium">Medium | $14</option>
+                  <option value="large">Large | $16</option>
+                  <option value="garfield">Garfield Size | $18</option>
+                  <option value="special">Special: Lasagna Pizza! | $22</option>
+                </select>
+              </div>
+              <div class = "col-md-4">
+                <select class="form-control" id="add-toppings">
+                  <option value="xtra-cheese">xtra-cheese</option>
+                  <option value="pepperoni">pepperoni</option>
+                  <option value="carnitas">carnitas</option>
+                  <option value="pulled-pork">pulled-pork</option>
+                  <option value="brisket">brisket</option>
+                  <option value="red-onion">red onion</option>
+                  <option value="grilled-onion">grilled onion</option>
+                  <option value="mushroom">mushroom</option>
+                  <option value="artichoke">artichoke</option>
+                  <option value="peppers">peppers</option>
+                  <option value="grilled-peppers">grilled peppers</option>
+                  <option value="black-olives">black olives</option>
+                  <option value="peanut-butter">peanut butter</option>
+                </select>
+              </div>
+              <!-- <div class = "col-md-4">
+                <select class="form-control" id="new-showtime">
+                  <option value="firstShow">12:00</option>
+                  <option value="secondShow">3:00</option>
+                  <option value="thirdShow">4:00</option>
+                  <option value="fourthShow">5:00</option>
+                  <option value="fifthShow">7:00</option>
+                  <option value="sixthShow">9:00</option>
+                </select>
+              </div> -->
+              <br>
+              <br>
+              <div>
+                <button name="submit" class='btn btn-primary btn-lg'>ORDER!</button>
+              </div>
+              <br>
+            </form>
+          </div>
+        </div>
+
         <button class="btn btn-default"> Pick Up </button>
         <button class="btn btn-primary"> Delivery </button>
       </div>
     </div>
+
+
 
   </body>
 </html>
