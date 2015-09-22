@@ -28,3 +28,25 @@ Order.prototype.addToppings = function(topping) {
 // function Pizza(topping1) {
 //   this.topping1 = topping1;
 // }
+
+$(document).ready(function(event) {
+
+  $("form#new-order").submit(function(event) {
+    event.preventDefault();
+
+    var customerName = $("input#customer-name").val();
+    var pizzaSize = $("select#pizza-size option:selected").text();
+    var addToppings = $("select#add-toppings option:selected").text();
+    var newOrder = new Order(customerName);
+    newTicket.ticketPrice();
+
+    $('.customer-name').text(customerName);
+
+    $('#ticket-confirmation').text('You have successfuly purchased tickets for : ' + newTicket.nameOfMovie + " showing at " + newTicket.showtime + "... Now pay up! Its going to cost you: " + newTicket.price);
+
+    });
+    $("#result").show();
+    event.preventDefault();
+
+
+});
