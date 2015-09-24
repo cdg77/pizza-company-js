@@ -17,14 +17,14 @@
             <form  id = "order-pizza" class="form-group">
               <div class = "col-md-4">
                 <div class="form-group">
-                  <label for="inputEmail" class="col-lg-2 control-label">Name on Order</label>
+                  <label for="customer-name" class="col-lg-2 control-label">Name on Order</label>
                   <div class="col-lg-10">
                     <input type="text" class="form-control" id="customer-name" placeholder="Jon Arbuckle">
                   </div>
                 </div>
               </div>
               <div class = "col-md-4">
-                <label for="inputEmail" class="col-lg-2 control-label">Pie Size</label>
+                <label for="pizza-size" class="col-lg-2 control-label">Pie Size</label>
                 <div class='col-lg-10'>
                   <select class="form-control" id="pizza-size">
                     <option value="personal">Personal | $10</option>
@@ -63,15 +63,23 @@
               </div>
               <br>
             </form>
+            <div>
+
+            </div>
+            <div id="hours">
+            <p>Click here to view our hours</p>
+              <p id='mondays'><img  src="images/garfield-mondays.jpg" >Don't forget we are open 24 hours a day, except... <strong>MONDAYS</strong> we are closed <strong>MONDAYS</strong></p>
+            </div>
+
           </div>
         </div>
 
-        <button class="btn btn-default"> Pick Up </button>
-        <button class="btn btn-primary"> Delivery </button>
+        <!-- <button class="btn btn-default"> Pick Up </button>
+        <button class="btn btn-primary"> Delivery </button> -->
       </div>
     </div>
     <div class='well'>
-      <span id='order-confirmation' </span>
+      <h2><span id='order-confirmation'></span></h2>
     </div>
   </body>
 </html>
